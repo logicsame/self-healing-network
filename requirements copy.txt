@@ -1,8 +1,0 @@
-torch
-typing
-numpy
-pandas
-matplotlib
-seaborn
-
--e .

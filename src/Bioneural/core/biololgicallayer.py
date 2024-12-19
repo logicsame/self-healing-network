@@ -2,26 +2,23 @@ from dataclasses import dataclass
 import torch
 import torch.nn as nn
 from typing import Optional, Dict, List, Union
-from ..core.homeostasis import HomeostaticRegulation
+from Bioneural.core.homeostasis import HomeostaticRegulation
 from torch.nn.utils import weight_norm
 import torch.nn.functional as F
-from ..utils.logging import HealthLogger
-from ..metrics.healtracker import HealthTracker
+from Bioneural.metrics.healtracker import HealthTracker
 import logging
-from ..visualization.biosysvisualization import BioNeuronVisualizer
+from Bioneural.visualization.biosysvisualization import BioNeuronVisualizer
 from dataclasses import dataclass
 import torch
 import torch.nn as nn
 from typing import Optional, Dict, List, Union
 from collections import defaultdict
 import numpy as np
-from ..core.homeostasis import HomeostaticRegulation
+from Bioneural.core.homeostasis import HomeostaticRegulation
 from torch.nn.utils import weight_norm
 import torch.nn.functional as F
-from ..utils.logging import HealthLogger
-from ..metrics.healtracker import HealthTracker
 import logging
-from ..visualization.biosysvisualization import BioNeuronVisualizer
+from Bioneural.visualization.biosysvisualization import BioNeuronVisualizer
 
 class BioLogicalNeuron(nn.Module):
     """Enhanced Biological Neuron with advanced repair mechanisms and multi-strategy monitoring"""
